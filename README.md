@@ -34,7 +34,7 @@ Between 4 and 20 min per sample depending on coverage, assembler and resources u
 
 ## Manuals ##
 ### cgMLST_Mabs.docx ###
-This manual includes detailed information to perform cgMLST analysis in SeqSphere+ (https://www.ridom.de/seqsphere/), including steps to identify subspecies or DCC status of newly sequenced isolates.
+This manual includes detailed information to perform cgMLST analysis, including steps to identify subspecies or DCC status of newly sequenced isolates.
 
 
 
