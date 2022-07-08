@@ -61,7 +61,7 @@ Depends on file size and resources used <br />
 
 ## Manuals ##
 ### cgMLST_Mabs.docx ###
-This manual includes detailed information to perform cgMLST analysis, including steps to identify subspecies or DCC status of newly sequenced isolates.
+This manual includes detailed information to perform cgMLST analysis for M. abscessus, including steps to identify subspecies or DCC status of newly sequenced isolates.
 
 
 
