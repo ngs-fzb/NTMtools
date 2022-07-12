@@ -4,7 +4,7 @@ This is a repository with scripts and manuals for analysing NGS data from nontub
 ## Scripts ##
 
 #### Usage ####
-_Install required packages (see script)_ <br />, e.g. using conda
+_Install required packages (see script), e.g. using conda _ <br />
 _activate conda environment where shovill is installed_ <br /> 
 $ conda activate EnvName <br /> 
 _run script_ <br /> 
