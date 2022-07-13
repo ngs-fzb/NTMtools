@@ -10,16 +10,16 @@ $ conda activate EnvName <br />
 _run script_ <br /> 
 $ bash PathToScript/scriptname.sh <br /> 
 
-### Assemble_usingShovill_Mabs.sh ###
+### starter_Assemble_usingShovill_Mab.sh ###
 #### Function ####
 Wrapper script for creating assemblies from illumina fastQ files for Mycobacterium abscessus. <br /> 
 This bash script calls the shovill pipeline (https://github.com/tseemann/shovill) and summarises the output (assembly statistics) into a text file.
 
-### sra_download_parallel_MD.sh ###
+### starter_SRA-Download_usingFasterq-dump.sh ###
 #### Function ####
-Download FastQ files in parallel (to reduce total time for downloading the files).
+Download FastQ files from SRA, very fast.
 
-### starter_Mashtree_Mab_MD.sh ###
+### starter_PhyloTree_usingMashtree_Mab.sh ###
 #### Function ####
 This script calculates mash distances and creates a phylogenetic tree out of it".
 
