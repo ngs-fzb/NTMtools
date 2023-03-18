@@ -1,5 +1,5 @@
 # NTMtools
-This is a repository with scripts and manuals for analysing NGS data from nontuberculous mycobacteria
+This repository contains scripts and manuals used in the paper "Delineating Mycobacterium abscessus population structure and transmission employing high-resolution core genome multilocus sequence typing" (Diricks et al. 2022). Questions? Ask mdiricks@fz-borstel.de
 
 ## Scripts ##
 
