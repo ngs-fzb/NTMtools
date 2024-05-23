@@ -1,31 +1,36 @@
 # NTMtools
-This repository contains scripts and manuals used in the paper "Delineating Mycobacterium abscessus population structure and transmission employing high-resolution core genome multilocus sequence typing" (Diricks et al. 2022). Questions? Ask mdiricks@fz-borstel.de
+This repository contains scripts and manuals for whole genome sequencing based analysis of non-tuberculous mycobacteria. Questions? Ask mdiricks@fz-borstel.de
 
-## Scripts ##
+The wrapper script starter_NTMseq.sh runs on linux and accepts FastQ (illumina) and FastA files as input.
+It includes:
 
-#### Usage ####
-_Install required packages (see script), e.g. using conda_ <br />
-_Activate conda environment where packages are installed_ <br /> 
-$ conda activate EnvName <br /> 
-_run script_ <br /> 
-$ bash PathToScript/scriptname.sh <br /> 
+1.	Quality control of raw sequence reads
+[Input: FastQ files; Required tools: FastQC and multiQC]
+2.	Contamination detection 
+[Input: FastQ files or FastA files; Required tools: kraken2]
+3.	Preprocessing of raw sequence reads (e.g. adapter removal) 
+[Required tools: fastp]
+4.	Mycobacterium (sub)species and resistance prediction 
+[Input: FastQ files; Required tools: NTMprofiler]
+5.	Multi-locus sequence typing (MLST)
+[Input: FastQ files; Required tools: srst2; Required database: pubMLST (only available for M. abscessus)]
+6.	Assembly of sequence reads
+[Input: FastQ files; Required tools: Shovill; Output: FastA files]
+7.	Fast phylogenetic analysis using Mashtree
+[Input: FastQ files or FastA files; Required tools: Mashtree]
+8.	Detection of known plasmids
+[Input: FastQ files; Required tools: srst2 and seqkit; Required database: PLSDB or custom]
+9.	De novo prediction of plasmid contigs
+[Input: FastQ files; Required tools: platon and/or plasmidspades]
+10.	Resistance and virulence gene prediction
+[Input: FastA files; Required tools: AMRfinder+]
 
-### starter_Assemble_usingShovill_Mab.sh ###
-#### Function ####
-Wrapper script for creating assemblies from illumina fastQ files for Mycobacterium abscessus. <br /> 
-This bash script calls the shovill pipeline (https://github.com/tseemann/shovill) and summarises the output (assembly statistics) into a text file.
+# Getting Started
+For complete installation instructions of NTMseq, description and usage examples please send a mail to mdiricks@fz-borstel.de.
 
-### starter_SRA-Download_usingFasterq-dump.sh ###
-#### Function ####
-Download FastQ files from SRA, very fast.
+# Citation
+Diricks et al., 2022: https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-022-01017-x --> see folder scripts/2022_Diricks_abscessus
 
-### starter_PhyloTree_usingMashtree_Mab.sh ###
-#### Function ####
-This script calculates mash distances and creates a phylogenetic tree out of it".
-
-## Manuals ##
-### cgMLST_Mabs.docx ###
-This manual includes detailed information to perform cgMLST analysis for M. abscessus, including steps to identify subspecies or DCC status of newly sequenced isolates.
 
 
 
