@@ -35,7 +35,7 @@ bar_plot <- ggplot(fast_ani_multiple)+
   geom_bar(aes(x = reorder(plasmid,plasmid,function(x)-length(x)),
                fill=growth))+
   theme(axis.text.x = element_text(angle=90, hjust=1))+
-  labs(x="Plasmid",y="Number of strains",fill="Runyon-classification",title="B")+
+  labs(x="Plasmid",y="Number of species",fill="Runyon-classification",title="B")+
   scale_fill_manual(values=c("#d2691e","#92e2fa","#1602f7","black","darkgrey"))
 bar_plot
 
