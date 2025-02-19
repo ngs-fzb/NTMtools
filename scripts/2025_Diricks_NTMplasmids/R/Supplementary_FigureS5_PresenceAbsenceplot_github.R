@@ -39,6 +39,7 @@ bar_plot <- ggplot(fast_ani_multiple)+
   scale_fill_manual(values=c("#d2691e","#92e2fa","#1602f7","black","darkgrey"))
 bar_plot
 
+           
 #Put graphs together
 plot_grid(dot_plot,bar_plot,ncol=1,align = c("hv"),
           axis = c("tblr"), rel_heights = c(2,0.8))
