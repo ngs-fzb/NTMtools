@@ -29,7 +29,8 @@ It includes:
 For complete installation instructions of NTMseq, description and usage examples please send a mail to mdiricks@fz-borstel.de.
 
 # Citation
-Diricks et al., 2022: https://genomemedicine.biomedcentral.com/articles/10.1186/s13073-022-01017-x --> see folder scripts/2022_Diricks_abscessus
+https://github.com/ngs-fzb/NTMtools/tree/main/scripts/NTMseq or https://doi.org/10.1186/s12866-025-04563-7
+
 
 
 
